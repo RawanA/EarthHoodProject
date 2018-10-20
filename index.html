@@ -470,7 +470,7 @@ $.getJSON( "testJSON.json", function( data ) {
     }else{
       console.log(data[i]);
       checker(data[i].i,data[i].v);
-	    if(data[i].v > 19 && data[i].v < 18){
+	    if(data[i].v > 19 || data[i].v < 18){
 		    alert("Danger : problem in the Station !!!");
 	    }
       randomValue(data[i].v, gaugeChart, "voltage");
