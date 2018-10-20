@@ -476,7 +476,8 @@ $.getJSON( "testJSON.json", function( data ) {
       randomValue(data[i].v, gaugeChart5, "KW");
       // console.log("5");
 	    if(data[i].v > 19 || data[i].v < 18){
-		    alert("Danger : problem in the Station !!!");
+		    document.getElementById("alert").value = "Danger : problem in the Station number : 1";
+// 		    alert("Danger : problem in the Station !!!");
 	    }
       i++;
 	    if(standardWind > 700){
