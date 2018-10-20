@@ -476,11 +476,11 @@ $.getJSON( "testJSON.json", function( data ) {
 //       randomValue(data[i].v, gaugeChart3, "KW");
       randomValue(data[i].v, gaugeChart5, "KW");
       // console.log("5");
-	    if(data[i].v > 19 || data[i].v < 18){
+	    if(data[i].v == 19 || data[i].v == 17){
 		    
   
-		    document.getElementsByClassName("msg").innerHTML = "message";
-// 		    alert("Danger : problem in the Station number 1 !!!");
+// 		    document.getElementsByClassName("msg").innerHTML = "message";
+		    alert("Danger : problem in the Station number 1 !!!");
 	    }
       i++;
 	    if(standardWind > 700){
