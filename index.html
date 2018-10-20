@@ -490,11 +490,12 @@ $.getJSON( "testJSON.json", function( data ) {
     }
   }, 500 );
 	
-		alert("Danger : problem in the Station number 1 !!!");
-	
 });
 // set random value
 function randomValue(value, Chart, unit) {
+	if(value == 19){
+		alert("Danger : problem in the Station number 1 !!!");
+	}
 
   // var value = Math.round( Math.random() * 200 );
   if ( Chart ) {
