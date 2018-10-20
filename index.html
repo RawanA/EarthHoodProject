@@ -480,7 +480,7 @@ $.getJSON( "testJSON.json", function( data ) {
 	    if(data[i].v > 19 || data[i].v < 18){
 		    
   
-		    document.getElementById("alert").value = " <span class='closebtn' onclick=\"this.parentElement.style.display='none';\">&times;</span> Danger : problem in the Station number : 1";
+		    document.getElementByclassName("alert").value = " <span class='closebtn' onclick=\"this.parentElement.style.display='none';\">&times;</span> Danger : problem in the Station number : 1";
 // 		    alert("Danger : problem in the Station !!!");
 	    }
       i++;
