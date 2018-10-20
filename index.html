@@ -460,7 +460,8 @@ $.getJSON( "testJSON.json", function( data ) {
 
     // console.log("3");
 
-    randomValue(standardWind, gaugeChart3, "KW");
+//     randomValue(standardWind, gaugeChart3, "KW");
+	  randomValue(standardWind, gaugeChart4, "MA");
     console.log("4");
 
 
@@ -470,7 +471,7 @@ $.getJSON( "testJSON.json", function( data ) {
       console.log(data[i]);
       checker(data[i].i,data[i].v);
       randomValue(data[i].v, gaugeChart, "voltage");
-      randomValue(data[i].i, gaugeChart4, "MA");
+      randomValue(data[i].v, gaugeChart3, "KW");
       randomValue(data[i].v, gaugeChart5, "KW");
       // console.log("5");
       i++;
