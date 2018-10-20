@@ -471,7 +471,7 @@ $.getJSON( "testJSON.json", function( data ) {
       console.log(data[i]);
       checker(data[i].i,data[i].v);
 	    if(data[i].v > 18.5){
-		    alert("Error message : value has exceeded");
+		    alert("Danger : problem in the Station !!!");
 	    }
       randomValue(data[i].v, gaugeChart, "voltage");
 //       randomValue(data[i].v, gaugeChart3, "KW");
