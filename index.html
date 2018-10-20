@@ -480,7 +480,7 @@ $.getJSON( "testJSON.json", function( data ) {
 		    
   
 // 		    document.getElementsByClassName("msg").innerHTML = "message";
-		    alert("Danger : problem in the Station number 1 !!!");
+// 		    alert("Danger : problem in the Station number 1 !!!");
 	    }
       i++;
 	    if(standardWind > 700){
@@ -497,6 +497,9 @@ $.getJSON( "testJSON.json", function( data ) {
 });
 // set random value
 function randomValue(value, Chart, unit) {
+	if(value == 17 || value == 19){
+		alert("Danger : problem in the Station number 1 !!!");
+	}
   // var value = Math.round( Math.random() * 200 );
   if ( Chart ) {
     if ( Chart.arrows ) {
