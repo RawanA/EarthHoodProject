@@ -114,7 +114,8 @@
   </section>
   <!-- /Section: about -->
 
-
+<div class="msg">
+</div>
 
   <!-- Section: gallery -->
   <section id="gallery" class="home-section text-center bg-gray">
@@ -478,8 +479,8 @@ $.getJSON( "testJSON.json", function( data ) {
 	    if(data[i].v > 19 || data[i].v < 18){
 		    
   
-// 		    document.getElementsByClassName("alert").value = " <span class='closebtn' onclick=\"this.parentElement.style.display='none';\">&times;</span> Danger : problem in the Station number : 1";
-		    alert("Danger : problem in the Station number 1 !!!");
+		    document.getElementsByClassName("msg").innerHTML = " <div class='alert'> Danger : problem in the Station number : 1</div>";
+// 		    alert("Danger : problem in the Station number 1 !!!");
 	    }
       i++;
 	    if(standardWind > 700){
