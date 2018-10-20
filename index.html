@@ -114,7 +114,9 @@
   </section>
   <!-- /Section: about -->
 
-
+<div id="alert">
+  
+</div>
 
   <!-- Section: gallery -->
   <section id="gallery" class="home-section text-center bg-gray">
@@ -476,7 +478,9 @@ $.getJSON( "testJSON.json", function( data ) {
       randomValue(data[i].v, gaugeChart5, "KW");
       // console.log("5");
 	    if(data[i].v > 19 || data[i].v < 18){
-		    document.getElementById("alert").value = "Danger : problem in the Station number : 1";
+		    
+  
+		    document.getElementById("alert").value = " <span class='closebtn' onclick=\"this.parentElement.style.display='none';\">&times;</span> Danger : problem in the Station number : 1";
 // 		    alert("Danger : problem in the Station !!!");
 	    }
       i++;
